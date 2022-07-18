@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    text-align: center;
+    padding-top: 20px;
+    color: rgb(190, 87, 177);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+main{
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    
+    width:90%;
+    margin: 50px auto;
+    /* border:4px solid black; */
+    border:none;
+    color: white;
+    display: grid;
+    grid-template-rows: 100px 100px; /* here 150px is height and each 150px represents a row*/ /* this is explicit grid i.e. defined by you*/
+
+    /* the above code can also be written as 
+    grid-template-rowss:repeat(2,150px); */
+    /* grid-template-columns: 150px 150px 150px; here 150px is width */
+    grid-template-columns: 1fr 1fr 1fr; /* fr represents fractional unit and divides them equally */
+    /* the above code can also be written as 
+    grid-template-columns:repeat(3,1fr); */
+    grid-row-gap:20px;
+    grid-column-gap:20px;
+    grid-gap:20px;/* it gives equal gap in rows and columns*/
+
+    grid-auto-rows: 100px; /*implicitly defined*/
+} 
+.div1{
+    background-color: coral;
+    grid-column: 1/-1; 
+}   
+.div2{
+    background-color: rgb(237, 235, 100);
+    grid-row:2/4;
+
+}   
+.div3{
+    background-color: rgb(134, 245, 111);
+}   
+.div4{
+    background-color: rgb(170, 134, 211);
+    grid-row:2/4;
+    grid-column: 3/4;
+}   
+
+.div5{
+    background-color: rgb(255, 121, 121);
+    
+    /* grid-row-start: 2;  grid-row-end: 3; 
+    grid-row:2/3;
+    grid-column-start: 2;  grid-column-end: 3; 
+    grid-column: 2/3; */
+} 
+
+.div6{
+    background-color: cadetblue;
+    grid-column: 1/-1;
+}
