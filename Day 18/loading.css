@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+body{
+    background-color: #363432;
+    
+}
+.animation{
+    display: flex;
+}
+h2{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom:150px;
+    font-family: 'Poppins' , sans-serif;
+}
+.circle{
+    margin: 70px auto;
+    width: 70px;
+    height: 70px;
+    border: 10px solid rgba(255,255,255,0.2);
+    border-radius: 50%;
+    border-top-color:white ;
+    animation: spin 1s linear infinite;
+}
+@keyframes spin {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.container{
+    width: 80px;
+    margin: 80px auto;
+}
+.dot{
+    width: 20px;
+    height:20px;
+    display: inline-block;
+    border-radius: 50%;
+}
+.dot1{
+    background-color: #1abc9c;
+    animation: jump-up 0.6s 0.1s linear infinite;
+}
+.dot2{
+    background-color: #ffd64a;
+    animation: jump-up 0.6s 0.2s linear infinite;
+}
+.dot3{
+    background-color: #e067ef;
+    animation: jump-up 0.6s 0.3s linear infinite;
+}
+@keyframes jump-up {
+    50%{
+        transform: translate(0,15px);
+    }
+}
+.box{
+    width: 35px;
+    height: 35px;
+    background-color: #868483;
+    display: inline-block;
+    animation: pulse 0.6s ease-in infinite alternate;
+}
+.box2, .box3{
+    animation-delay: 0.6s;
+}
+@keyframes pulse {
+    100%{
+        opacity:0 ;
+    }
+}
