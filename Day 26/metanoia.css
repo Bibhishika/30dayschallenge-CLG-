@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat',sans-serif;
+    line-height: 1;
+}
+body{
+    background-color: #fefefe;
+}
+.wrapper{
+    width: 90%;
+    max-height: 95%;
+    margin: 0 auto;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+}
+h1{
+    font-size: 24px;
+    font-weight: 700;
+}
+h2,h3{
+    font-weight: 600;
+    color: rgb(2, 27, 2);
+    margin-bottom: 20px;
+}
+p{
+    font-size: 14px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+.go-to-link{
+    font-weight: 700;
+    color:rgb(2, 27, 2) ;
+}
+.reading-link{
+    text-transform: uppercase;
+    color: rgb(2, 77, 2);
+    font-weight: 600;
+    border-bottom: 2px solid rgb(2, 77, 2);
+}
+
+header{
+    padding: 30px 0;
+    background-color: rgb(106, 153, 106);
+    margin-bottom: 30px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar .logo{
+    color: rgb(2, 27, 2);
+}
+nav ul{
+    display: flex;
+    align-items: center;
+}
+nav li{
+    margin-left: 50px;
+}
+nav a{
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(2, 27, 2);
+    transition: all 0.2s;
+}
+
+nav a:hover{
+    color: white;
+}
+.content-flex{
+    display: flex;
+    justify-content: space-between;
+}
+main{
+    width: 70%;
+}
+aside{
+    width: 25%;
+}
+.hero{
+    padding: 30px;
+    border-bottom: 1px solid black;
+}
+.previous-article{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.img-section{
+    width: 40%;
+}
+.article-img{
+    min-height: 190px;
+    object-fit: cover;
+}
+.text-section{
+    width: 55%;
+}
+.details{
+    border:15px solid rgb(2, 27, 2) ;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+footer{
+    background-color:rgb(106, 153, 106) ;
+    text-align: center;
+    padding: 20px;
+    color: black;
+}
+
+footer p{
+    letter-spacing:2px;
+    margin: 0;
+}
+
+@media(max-width:768px){
+    .navbar{
+        flex-direction:column ;
+        text-align: center;
+    }
+    nav ul{
+        margin-left: -50px;
+        margin-top: 15px;
+    }
+    .previous-article{
+        flex-direction: column;
+    }
+    .img-section,
+    .text-section{
+        width: 100%;
+    }
+    .content-flex{
+        flex-direction: column;
+    }
+    main,
+    aside{
+        width: 100%;
+    }
+    aside{
+        margin-top: 30px;
+    }
+}
+
+@media(max-width:511px)
+{
+    nav ul{
+        flex-direction: column;
+    }
+    nav li{
+        margin-top: 20px;
+    }
+}
